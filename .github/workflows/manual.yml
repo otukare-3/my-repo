@@ -1,0 +1,14 @@
+name: Manual
+on:
+    workflow_dispatch: # 手動実行イベント
+        inputs:
+            greeting: # 入力パラメータ―名
+                type: string # データ型
+                default: Hello # デフォルト値
+                required: true # 必須フラグ
+                description: A cheerful world # 入力パラメータの概要
+jobs:
+    run:
+        runs-on: ubuntsu-latest
+        steps:
+            - run: echo "${{inputs.greeting}}" # 入力パラメーター[greeting]の参照
