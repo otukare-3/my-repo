@@ -4,7 +4,7 @@ on:
         paths: ['go/**/*.go'] # Goファイル変更時のみ
 jobs:
     test:
-        runs-on: uvuntu-latest
+        runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
             - uses: actions/setup-go@v5
