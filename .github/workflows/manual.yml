@@ -9,6 +9,6 @@ on:
                 description: A cheerful world # 入力パラメータの概要
 jobs:
     run:
-        runs-on: ubuntsu-latest
+        runs-on: ubuntu-latest
         steps:
             - run: echo "${{inputs.greeting}}" # 入力パラメーター[greeting]の参照
